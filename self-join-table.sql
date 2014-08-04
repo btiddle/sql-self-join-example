@@ -36,7 +36,7 @@ VALUES
 
 SELECT * FROM employees;
 
--- For each emmplyee, display their name, their salary,
+-- For each employee, display their name, their salary,
 -- their boss's name and their boss's salary.
 SELECT 
   CONCAT(e1.first_name, ' ', e1.last_name) 'Employee Name', 
@@ -47,8 +47,8 @@ FROM employees e1
 JOIN employees e2
 on e1.id_boss = e2.id_employee;
 
--- Select all employess that make more than 
--- thier bosses' and display highest paid to lowest paid.
+-- Select all employees that make more than 
+-- their bosses' and display highest paid to lowest paid.
 SELECT 
   CONCAT(e1.first_name, ' ', e1.last_name) 'Employee Name', 
   e1.salary 'Employee Salary',
